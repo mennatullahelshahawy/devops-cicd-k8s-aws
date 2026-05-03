@@ -51,3 +51,29 @@ kubectl get pods
 kubectl port-forward service/devops-service 8080:80 --address 0.0.0.0
 ```
 Then open http://localhost:8080
+
+
+# 🚀 API Endpoints
+
+- /-> Main endpoint (Hello message)
+- /health -> Health check endpoint
+
+
+# 📌 Kubernetes Architecture
+
+- Deployment: Manages application pods
+- Service: Express application internally/externally
+- Kind Cluster: Local Kubernetes environment
+
+
+# Key Learnings
+
+- Docker image creation and containerization
+- Kubernetes deployment and service configuration
+- Debugging ImagePullBackOff issue
+- Using kind for local kubernetes clusters
+- Port-forwarding for local access
+
+# Author Note
+
+This project was built as a DevOps learning excercise to simulate a real-world CI/CD and container orchestration workflow.
