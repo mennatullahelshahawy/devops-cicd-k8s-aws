@@ -29,24 +29,25 @@ A simple Node.js Express application that is:
 ### 1️ Build Docker Image
 ```bash
 docker build -t devops-app:latest .
-
+```
 
 ### 2 Load Image into Kind Cluster
 ```bash
 kind load docker-image devops-app:latest
-
+```
 ### 3 Deploy to kubernetes
 ```bash
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
+```
 
-
-### 3 Check pods status
+### 4 Check pods status
 ```bash
 kubectl get pods
+```
 
 ### 5 Expose App:
 ```bash
 kubectl port-forward service/devops-service 8080:80 --address 0.0.0.0
-
+```
 Then open http://localhost:8080
