@@ -26,7 +26,7 @@ A simple Node.js Express application that is:
 
 ## ⚙️ How to Run the Project
 
-### 1️ Build Docker Image
+### 1 Build Docker Image
 ```bash
 docker build -t devops-app:latest .
 ```
